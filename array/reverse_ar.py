@@ -21,3 +21,5 @@ f.reverse()
 e = arr1.array('i')
 e.fromlist(f)
 print(e)
+
+
