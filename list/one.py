@@ -90,3 +90,35 @@ lst3 = [1,2,3]
 lst4 = [7,8,9]
 ComLst = [(x,y) for x in lst3 for y in lst4]
 print(ComLst)
+
+lst7 = [z for z in range(1,51) if z%2==0]
+print(lst7)
+
+lst8 = [v for v in range(1,91) if v%2==0]
+print(lst8)
+
+lst9 = ["a","b","c"]
+lst0 = ["d","e","f"]
+CobList = [(x,y) for x in lst9 for y in lst0]
+print(CobList)
+
+# list sort method
+lst10 = ["fluid dynamics","solid mechanics","engineering mechanics","hydraulics","aerodynamics"]
+lst10.sort()
+print("list10 after sorted:", lst10)
+
+lst11 = ["Industrial engineering","Motorsport engineering", "remote sensing and GIS", "4g engineering"]
+lst11.sort(key=str.lower)
+print(lst11)
+
+def myfunction(s):
+    return s%10
+lst14 = [28,46,58,97,108,460]
+lst14.sort(key=myfunction)
+print("afetr sort:", lst14)
+
+# copy lists
+
+print("id(a):", id(a))
+
+
